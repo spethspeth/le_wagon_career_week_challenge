@@ -1,4 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Welcome to the museum finder!</h1>
 <div data-controller="query">
+  <p>Latitude:</p>
+  <input data-query-target="lat" type="string">
+  <p>Longitude:</p>
+  <input data-query-target="lon" type="string">
+  <button data-action="click->query#submit">
+    Submit
+  </button>
+  <ul data-query-target="output">
+  </ul>
 </div>
