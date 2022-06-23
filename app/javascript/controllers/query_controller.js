@@ -8,8 +8,12 @@ export default class extends Controller {
   }
 
   listMuseums(data) {
+    console.log(data)
+    data.sort(function (a, b) {
+      return a.context[0].text - b.context[0].text;
+    });
     data.forEach((museum) => {
-      const museumtag = `<li>${museum.place_name}</li>`
+      const museumtag = `<li>${museum.context[0].text}: ${museum.place_name}</li>`
       this.outputTarget.insertAdjacentHTML("beforeend", museumtag)
     })
   }
