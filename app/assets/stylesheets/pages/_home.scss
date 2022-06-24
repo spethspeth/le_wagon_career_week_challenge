@@ -1,1 +1,66 @@
 // Specific CSS for your home-page
+.wrapper {
+  width: 800px;
+  height: 100vh;
+  padding: 16px;
+  margin: auto;
+  background-color: #f1e8b8;
+  border-left: solid 2px #E84855;
+  border-right: solid 2px #E84855;
+}
+
+.inputfields {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: solid 2px #E84855;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.field input {
+  background-color: #8c93a8;
+  border: solid 2px #E84855;
+  color: white;
+  font-weight: bold;
+}
+
+.field {
+  padding: 8px;
+}
+
+.submit {
+  width: 100px;
+  font-size: 32px;
+  background-color: rgb(63, 63, 127);
+  border: solid 2px #E84855;
+  color: white;
+  font-weight: bold;
+  border-radius: 0px 15px 15px 0px;
+  transition: 0.25s;
+  &:hover, &:focus {
+    box-shadow: inset 0 0 0 2em #E84855;
+  }
+}
+
+.field p {
+  font-weight: bold;
+  color: #E84855;
+}
+
+.output {
+  border: solid 2px #E84855;
+  border-radius: 0px 15px 0px 0px;
+  min-height: 75vh;
+  padding: 8px;
+}
+
+.item {
+  border-bottom: solid 2px #E84855;
+  background-color: #8c93a8;
+  margin-bottom: 8px;
+  list-style-type: none;
+  padding: 0px;
+  color: white;
+}

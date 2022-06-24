@@ -1,12 +1,20 @@
-<h1>Welcome to the museum finder!</h1>
-<div data-controller="query">
-  <p>Latitude:</p>
-  <input data-query-target="lat" type="string">
-  <p>Longitude:</p>
-  <input data-query-target="lon" type="string">
-  <button data-action="click->query#submit">
-    Submit
-  </button>
-  <ul data-query-target="output">
-  </ul>
+<div class="wrapper">
+  <h1 class="title">Welcome to the museum finder!</h1>
+  <div class="totalform" data-controller="query">
+    <div class="inputfields">
+      <div class="field">
+        <p>Latitude:</p>
+        <input data-query-target="lat" type="string">
+      </div>
+      <div class="field">
+        <p>Longitude:</p>
+        <input data-query-target="lon" type="string">
+      </div>
+      <button class="submit" data-action="click->query#submit">
+      Go!
+      </button>
+    </div>
+    <ul class="output" data-query-target="output">
+    </ul>
+  </div>
 </div>
